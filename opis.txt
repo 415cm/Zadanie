@@ -1,0 +1,4 @@
+Skrypt na początku pobiera z podanych linków pliki XML. Zawierają one różne dane na temat artykułów z serwisów informacyjncych.
+Dane te przekazywane są oraz zapisywane w bazie danych. Baza danych stworzona została w MySQL w taki sposób aby artykuły nie powielały 
+się. Maksymalnie dodawane jest 5 najnowszych artykułów z każdego RSS. Aby skrypt zadziałał należy zaimportować bazę danych z załączonego pliku.
+Skrypt należy uruchomić na serwerze z zainstalowanym PHP oraz MySQL.
