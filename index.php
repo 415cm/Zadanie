@@ -33,10 +33,9 @@
     $j=0;
     foreach($feedrmf->channel->item as $entry){
         /*
-        //$html = file_get_html($entry->link);
-        //$ret = $html->find('div.article-date', 0);
-       // var_dump($ret);
-       nie moglem sparsowac daty dodania artykułu do bazy danych
+        $html = file_get_html($entry->link);
+        $ret = $html->find('div.article-date', 0);
+        var_dump($ret);
        */
        $sql = "INSERT IGNORE INTO `articles` (`Title`,`PubDate`,`Content`,`AddDate`) VALUES 
         ('$entry->title','$entry->pubDate','$entry->description','$entry->pubDate')";
